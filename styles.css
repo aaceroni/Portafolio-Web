@@ -226,25 +226,25 @@ body {
 
 
 
-/* Estilos para el botón del menú */
+
 .menu-toggle {
-  display: none; /* Ocultar por defecto en pantallas grandes */
+  display: none;
   font-size: 24px;
   color: white;
   cursor: pointer;
   position: fixed;
   top: 10px;
   left: 10px;
-  z-index: 1000; /* Asegura que esté por encima del contenido */
+  z-index: 1000;
 }
-/* Estilos para dispositivos móviles */
+
 @media (max-width: 768px) {
   .sidebar {
-    transform: translateX(-100%); /* Ocultar la barra lateral en móviles */
-    width: 180px; /* Ajusta el ancho de la barra lateral si es necesario */
+    transform: translateX(-100%);
+    width: 180px;
   }
 
   .menu-toggle {
-    display: block; /* Mostrar el botón de menú en móviles */
+    display: block;
   }
 }
