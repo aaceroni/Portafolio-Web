@@ -1,0 +1,316 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  background: #120c1d;
+  color: #ffffff;
+  font-family: "Euclid Circular A", "Poppins";
+  gap: 20px;
+  padding-top: 100px;
+}
+
+.sidebar {
+  box-shadow: none;
+  border: none;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 180px;
+  height: 100%;
+  background: linear-gradient(to right, #431d53, #120c1d);
+  transition: transform 0.3s ease;
+}
+
+.sidebar nav {
+  padding: 0 8px;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 72px;
+  padding: 0 20px 0 8px;
+  font-weight: bold;
+}
+
+.header img {
+  height: 24px;
+  rotate: 180deg;
+  margin-left: 14px;
+}
+
+.sidebar i {
+  font-size: 15px;
+}
+
+.header h1 {
+  font-size: 25px;
+  font-weight: bold;
+  color: cyan;
+}
+
+.sidebar:hover {
+  width: 180px;
+}
+
+.sidebar a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 44px;
+  width: 100%;
+  border-radius: 6px;
+  font-family: "Euclid Circular A", "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  padding: 0 0 0 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.sidebar a:hover {
+  background: rgb(0 0 0 / 20%);
+  text-decoration: none;
+}
+
+.titulo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  color: white;
+  width: 75vw;
+  max-width: 650px;
+  padding: 0px 30px 50px 20px;
+  padding-bottom: 400px;
+  margin: 80px;
+}
+
+.titulo h1 {
+  margin-bottom: 0px;
+}
+
+.titulo p {
+  margin-top: 0px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  width: 75vw;
+  max-width: 650px;
+  padding: 50px 30px 50px 20px;
+  background: #1b1b1b;
+  border-radius: 24px;
+  color: white;
+  margin: 80px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card img {
+  max-width: 280px;
+  width: 35vw;
+  height: 300px;
+  object-fit: cover;
+  margin-left: 0; /* Ajustado para evitar el empuje del contenido */
+  margin-right: 30px;
+  border-radius: inherit;
+  box-shadow: 0 60px 40px rgb(0 0 0 / 8%);
+}
+
+.card h1 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  font-family: "Euclid Circular A", "Poppins";
+  color: white;
+}
+
+.card h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  font-family: "Euclid Circular A", "Poppins";
+  color: white;
+}
+
+.card h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  font-family: "Euclid Circular A", "Poppins";
+  color: white;
+}
+
+.card p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  font-family: "Euclid Circular A", "Poppins";
+  color: white;
+}
+
+.card a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.icon-large {
+  font-size: 48px;
+}
+
+.vite-icon {
+  width: 17px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.python-icon {
+  width: 20px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.portfolio-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.portfolio-link h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.card button {
+  border: 1px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+  font-family: inherit;
+  padding: 16px 26px;
+  font-size: 16px;
+  border-radius: 40px;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .card {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .card h1, .card p {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    width: 250px;
+    height: 100vh; /* Asegura que el sidebar ocupe toda la altura de la pantalla */
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .menu-toggle {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+  
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .header h1 {
+    font-size: 20px;
+  }
+  
+  .titulo {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 468px) {
+  .card {
+    padding: 15px;
+    margin: 10px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  
+  .card h1, .card p {
+    margin-right: 0;
+  }
+  
+  .sidebar {
+    width: 100%; /* Asegura que el sidebar ocupe todo el ancho de la pantalla */
+    height: 100vh; /* Asegura que el sidebar ocupe toda la altura de la pantalla */
+    position: fixed; /* Asegura que el sidebar se quede en la pantalla */
+    top: 0; /* Ajusta la posición para que quede en la parte superior de la pantalla */
+    left: 0; /* Asegura que el sidebar esté alineado con el borde izquierdo */
+  }
+  
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
