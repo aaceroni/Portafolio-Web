@@ -218,8 +218,7 @@ body {
   color: inherit;
 }
 
-
-
+/* Estilo para el botón del menú en dispositivos móviles */
 .menu-toggle {
   display: none;
   font-size: 24px;
@@ -227,10 +226,7 @@ body {
   cursor: pointer;
 }
 
-
-
-
-@media (max-width: 1024px) {
+@media (max-width: 730px) {
   .card {
     flex-direction: column;
     padding: 20px;
@@ -248,11 +244,11 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 730px) {
   .sidebar {
     transform: translateX(-100%);
     width: 250px;
-    height: 100vh; /* Asegura que el sidebar ocupe toda la altura de la pantalla */
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -285,7 +281,7 @@ body {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 472px) {
   .card {
     padding: 15px;
     margin: 10px;
@@ -302,11 +298,9 @@ body {
   }
   
   .sidebar {
-    width: 100%; /* Asegura que el sidebar ocupe todo el ancho de la pantalla */
-    height: 100vh; /* Asegura que el sidebar ocupe toda la altura de la pantalla */
-    position: fixed; /* Asegura que el sidebar se quede en la pantalla */
-    top: 0; /* Ajusta la posición para que quede en la parte superior de la pantalla */
-    left: 0; /* Asegura que el sidebar esté alineado con el borde izquierdo */
+    width: 100%;
+    height: auto;
+    position: static;
   }
   
   .header {
