@@ -16,20 +16,26 @@ body {
 }
 
 .sidebar {
-  box-shadow: none;
-  border: none;
-  overflow: auto;
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
+  width: 180px; /* Ajusta el ancho según sea necesario */
+  height: 100%;
+  background: linear-gradient(to right, #431d53, #120c1d);
+  box-shadow: none;
+  border: none;
+  overflow: auto;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  width: 180px;
-  height: 100%;
-  background: linear-gradient(to right, #431d53, #120c1d);
   transition: transform 0.3s ease;
+  transform: translateX(0); /* Visible en pantallas grandes */
+}
+
+/* Mostrar la barra lateral cuando tenga la clase 'open' */
+.sidebar.open {
+  transform: translateX(0);
 }
 
 .sidebar nav {
@@ -218,93 +224,27 @@ body {
   color: inherit;
 }
 
-/* Estilo para el botón del menú en dispositivos móviles */
+
+
+/* Estilos para el botón del menú */
 .menu-toggle {
-  display: none;
+  display: none; /* Ocultar por defecto en pantallas grandes */
   font-size: 24px;
   color: white;
   cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000; /* Asegura que esté por encima del contenido */
 }
-
-@media (max-width: 730px) {
-  .card {
-    flex-direction: column;
-    padding: 20px;
-  }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  
-  .card h1, .card p {
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 730px) {
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
   .sidebar {
-    transform: translateX(-100%);
-    width: 250px;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: transform 0.3s ease;
-  }
-
-  .sidebar.open {
-    transform: translateX(0);
+    transform: translateX(-100%); /* Ocultar la barra lateral en móviles */
+    width: 180px; /* Ajusta el ancho de la barra lateral si es necesario */
   }
 
   .menu-toggle {
-    display: block;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1000;
-  }
-  
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .header h1 {
-    font-size: 20px;
-  }
-  
-  .titulo {
-    padding: 0 20px;
-  }
-}
-
-@media (max-width: 400px) {
-  .card {
-    padding: 15px;
-    margin: 10px;
-  }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-    margin: 0;
-  }
-  
-  .card h1, .card p {
-    margin-right: 0;
-  }
-  
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: static;
-  }
-  
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
+    display: block; /* Mostrar el botón de menú en móviles */
   }
 }
