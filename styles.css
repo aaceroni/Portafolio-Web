@@ -125,29 +125,7 @@ body {
 }
 
 
-.titulo {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 25px;
-  color: white;
-  width: 75vw;
-  max-width: 650px;
-  padding: 0px 30px 50px 20px;
-  padding-bottom: 400px;
-  margin: 30px;
-  width: 75vw;
-}
 
-.titulo h1 {
-  margin-bottom: 0px;
-}
-
-.titulo p {
-  margin-top: 0px;
- color: rgb(0, 255, 170);
-}
 
 .card {
   display: flex;
@@ -158,22 +136,40 @@ body {
   background: #0d0815;
   border-radius: 24px;
   color: white;
-  margin: 30px;
+  margin: 53px;
   text-decoration: none;
   color: inherit;
 }
 
-
-
 .card img {
   max-width: 100%;
-  width: 35vw;
-  height: 300px;
+  width: 200px; /* Puedes ajustar el tamaño según sea necesario */
+  height: 200px; /* Asegúrate de que el ancho y el alto sean iguales para un círculo perfecto */
   object-fit: cover;
-  margin-left: 0; /* Ajustado para evitar el empuje del contenido */
+  margin-left: 0;
   margin-right: 30px;
-  border-radius: inherit;
-  box-shadow: 0 60px 40px rgb(0 0 0 / 8%);
+  border-radius: 50%; /* Esto hace que la imagen sea redonda */
+  margin-bottom: 30px;
+  animation: morph 3.5s linear infinite;
+}
+
+@keyframes morph{
+  0%,
+  100%{
+    border-radius: 
+    40% 60% 70% 30% /
+    40% 40% 60% 50%;
+  }
+  34%{
+    border-radius: 
+    70% 30% 50% 50% /
+    30% 30% 70% 70%;
+  }
+  67%{
+    border-radius: 
+    100% 60% 60% 100% /
+    100% 100% 60% 60%;
+  }
 }
 
 .card h1 {
@@ -210,6 +206,15 @@ body {
   margin-bottom: 30px;
   font-family: "Poppins";
   color: white;
+}
+
+.card .text1 {
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.card .text2 {
+  color: rgb(0, 255, 170); 
 }
 
 .card a {
@@ -262,6 +267,11 @@ body {
 
 
 @media (max-width: 768px) {
+  .banner{
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+  }
   .sidebar {
     transform: translateX(-100%);
     width: 180px;
@@ -275,9 +285,6 @@ body {
   }
   .menu-toggle {
     display: block;
-  }
-  .titulo {
-    flex-direction: column;
   }
   .header {
     flex-direction: column;
