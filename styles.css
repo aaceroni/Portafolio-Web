@@ -45,7 +45,6 @@ body {
 }
 
 
-
 .sidebar {
   position: fixed;
   top: 0;
@@ -96,11 +95,20 @@ body {
   cursor: pointer;
   text-decoration: none;
   color: inherit;
+  transition: background 0.3s ease;
 }
 
 .sidebar a:hover {
   background: rgb(0 0 0 / 20%);
-  text-decoration: none;
+}
+
+.sidebar a:active,
+.sidebar a.active {
+  background: rgb(0 0 0 / 30%);
+}
+
+.sidebar a:focus {
+  background: rgb(0 0 0 / 30%);
 }
 
 
@@ -164,7 +172,7 @@ body {
   margin-right: 30px;
   margin-bottom: 10px;
   font-family: "Poppins";
-  color: rgb(0, 242, 255);
+  color: rgb(0, 255, 170);
 }
 
 .card h2 {
@@ -174,7 +182,7 @@ body {
   margin-right: 30px;
   margin-bottom: 10px;
   font-family: "Poppins";
-  color: rgb(0, 242, 255);
+  color: rgb(0, 255, 170);
 }
 
 .card h3 {
