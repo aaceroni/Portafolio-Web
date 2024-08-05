@@ -136,7 +136,7 @@ body {
   background: #0d0815;
   border-radius: 24px;
   color: white;
-  margin: 53px;
+  margin: 55px;
   text-decoration: none;
   color: inherit;
 }
@@ -148,8 +148,7 @@ body {
   object-fit: cover;
   margin-left: 0;
   margin-right: 30px;
-  border-radius: 50%; /* Esto hace que la imagen sea redonda */
-  margin-bottom: 30px;
+  border-radius: 50%;
   animation: morph 3.5s linear infinite;
 }
 
@@ -267,11 +266,6 @@ body {
 
 
 @media (max-width: 768px) {
-  .banner{
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-  }
   .sidebar {
     transform: translateX(-100%);
     width: 180px;
