@@ -33,6 +33,7 @@ body {
 .header h1 {
   font-size: 25px;
   font-weight: bold;
+  padding-top: 35px;
   padding-left: 10px;
 }
 
@@ -61,6 +62,7 @@ body {
   gap: 8px;
   transition: transform 0.3s ease;
   transform: translateX(0);
+  z-index: 1000;
 }
 
 .sidebar.open {
@@ -111,7 +113,16 @@ body {
   background: rgb(0 0 0 / 30%);
 }
 
-
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1001;
+}
 
 
 .titulo {
@@ -249,17 +260,6 @@ body {
 
 
 
-
-.menu-toggle {
-  display: none;
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  z-index: 1000;
-}
 
 @media (max-width: 768px) {
   .sidebar {
