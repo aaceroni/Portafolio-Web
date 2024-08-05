@@ -10,7 +10,7 @@ body {
   justify-content: center;
   margin: 0;
   height: 100vh;
-  background: #120c1d;
+  background: #0d0815;
   color: #ffffff;
   font-family: "Poppins";
   gap: 20px;
@@ -41,7 +41,7 @@ body {
 }
 
 .header .text2 {
-  color: rgb(0, 255, 170);
+  color: rgb(0, 255, 170); 
 }
 
 
@@ -53,7 +53,7 @@ body {
   bottom: 0;
   width: 180px;
   height: 100%;
-  background: linear-gradient(to right, #431d53, #120c1d);
+  background: linear-gradient(to right, #250e2f, #0d0815);
   box-shadow: none;
   border: none;
   overflow: auto;
@@ -117,7 +117,7 @@ body {
   max-width: 650px;
   padding: 0px 30px 50px 20px;
   padding-bottom: 400px;
-  margin: 80px;
+  margin: 30px;
   width: 75vw;
 }
 
@@ -127,11 +127,8 @@ body {
 
 .titulo p {
   margin-top: 0px;
- color: rgb(0, 255, 170);;
+ color: rgb(0, 255, 170);
 }
-
-
-
 
 .card {
   display: flex;
@@ -142,13 +139,15 @@ body {
   background: #0d0815;
   border-radius: 24px;
   color: white;
-  margin: 80px;
+  margin: 30px;
   text-decoration: none;
   color: inherit;
 }
 
+
+
 .card img {
-  max-width: 280px;
+  max-width: 100%;
   width: 35vw;
   height: 300px;
   object-fit: cover;
@@ -165,7 +164,7 @@ body {
   margin-right: 30px;
   margin-bottom: 10px;
   font-family: "Poppins";
-  color: rgb(0, 255, 170);
+  color: rgb(0, 242, 255);
 }
 
 .card h2 {
@@ -175,7 +174,7 @@ body {
   margin-right: 30px;
   margin-bottom: 10px;
   font-family: "Poppins";
-  color: white;
+  color: rgb(0, 242, 255);
 }
 
 .card h3 {
@@ -261,6 +260,7 @@ body {
   }
   .body {
     flex-direction: column;
+    display: flex;
   }
   .card {
     flex-direction: column;
