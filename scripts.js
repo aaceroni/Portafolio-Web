@@ -8,15 +8,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
   sidebarLinks.forEach(link => {
     link.addEventListener('click', function() {
-      // Elimina la clase 'active' de todos los enlaces
+      //Elimina la clase 'active' de todos los enlaces
       sidebarLinks.forEach(link => link.classList.remove('active'));
       
-      // Añade la clase 'active' al enlace clicado
+      //Añade la clase 'active' al enlace clicado
       this.classList.add('active');
     });
   });
 
-  // Función para comprobar la posición del scroll y activar el enlace correspondiente
+  //Función para comprobar la posición del scroll y activar el enlace correspondiente
   function onScroll() {
     const sections = document.querySelectorAll('.section');
     let scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
@@ -29,6 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Escucha el evento de scroll
+  //Escuchar evento de scroll
   window.addEventListener('scroll', onScroll);
 });
