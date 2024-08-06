@@ -1,1 +1,5 @@
-Página web tipo portafolio
+Sitio web tipo portafolio
+
+HTML
+CSS
+JavaScript
