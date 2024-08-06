@@ -127,12 +127,37 @@ body {
 
 
 
+.download-btn {
+  color: white !important;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border: 2px solid rgb(0, 255, 170) !important;
+  border-radius: 5px;
+  background-color: transparent;
+  margin-bottom: 60px;
+
+}
+
+.download-btn:hover {
+  border-color: rgb(0, 255, 170);
+  color: #0d0815 !important;
+  background-color: rgb(0, 255, 170);
+}
+
+
+
+
 .card {
   display: flex;
   align-items: center;
   width: 75vw;
   max-width: 650px;
-  padding: 50px 30px 50px 20px;
+  padding: 0px 30px 200px 20px;
   background: #0d0815;
   border-radius: 24px;
   color: white;
@@ -143,10 +168,11 @@ body {
 
 .card img {
   max-width: 100%;
-  width: 200px; /* Puedes ajustar el tamaño según sea necesario */
-  height: 200px; /* Asegúrate de que el ancho y el alto sean iguales para un círculo perfecto */
+  width: 220px; /* Puedes ajustar el tamaño según sea necesario */
+  height: 220px; /* Asegúrate de que el ancho y el alto sean iguales para un círculo perfecto */
   object-fit: cover;
   margin-left: 0;
+  margin-right: 0;
   margin-right: 30px;
   border-radius: 50%;
   animation: morph 3.5s linear infinite;
