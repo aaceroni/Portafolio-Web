@@ -133,7 +133,7 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 15px !important;
   margin: 10px 0;
   cursor: pointer;
   border: 2px solid rgb(0, 255, 170) !important;
@@ -175,7 +175,7 @@ body {
   margin-right: 0;
   margin-right: 30px;
   border-radius: 50%;
-  animation: morph 3.5s linear infinite;
+  
 }
 
 @keyframes morph{
@@ -234,7 +234,7 @@ body {
 }
 
 .card .text1 {
-  font-size: 40px;
+  font-size: 37px;
   color: #ffffff;
 }
 
