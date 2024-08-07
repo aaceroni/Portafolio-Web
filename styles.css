@@ -10,11 +10,11 @@ body {
   justify-content: center;
   margin: 0;
   height: 100vh;
-  background: #0d0815;
+  background: black;
   color: #ffffff;
   font-family: "Poppins";
   gap: 20px;
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
 
@@ -42,7 +42,11 @@ body {
 }
 
 .header .text2 {
-  color: rgb(0, 255, 170); 
+  font-size: 24px;
+  background: linear-gradient(to left, rgb(0, 255, 170), rgb(22, 189, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 
@@ -53,7 +57,7 @@ body {
   bottom: 0;
   width: 180px;
   height: 100%;
-  background: linear-gradient(to right, #250e2f, #0d0815);
+  background: linear-gradient(to right, #250e2f, black);
   box-shadow: none;
   border: none;
   overflow: auto;
@@ -156,10 +160,9 @@ body {
   display: flex;
   align-items: center;
   width: 75vw;
-  max-width: 650px;
+  max-width: 670px;
   padding: 0px 30px 200px 20px;
-  background: #0d0815;
-  border-radius: 24px;
+  background: black;
   color: white;
   margin: 55px;
   text-decoration: none;
@@ -168,8 +171,8 @@ body {
 
 .card img {
   max-width: 100%;
-  width: 220px; /* Puedes ajustar el tamaño según sea necesario */
-  height: 220px; /* Asegúrate de que el ancho y el alto sean iguales para un círculo perfecto */
+  width: 220px;
+  height: 220px;
   object-fit: cover;
   margin-left: 0;
   margin-right: 0;
@@ -203,8 +206,11 @@ body {
   margin-top: 0;
   margin-right: 30px;
   margin-bottom: 10px;
-  font-family: "Poppins";
-  color: rgb(0, 255, 170);
+  font-family: "Poppins", sans-serif;
+  background: white;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
 }
 
 .card h2 {
@@ -239,7 +245,11 @@ body {
 }
 
 .card .text2 {
-  color: rgb(0, 255, 170); 
+  font-size: 24px;
+  background: linear-gradient(to left, rgb(0, 255, 170), rgb(22, 189, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .card a {

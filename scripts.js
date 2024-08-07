@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     sections.forEach((section, index) => {
       if (section.offsetTop <= scrollPos && section.offsetTop + section.offsetHeight > scrollPos) {
         sidebarLinks.forEach(link => link.classList.remove('active'));
-        sidebarLinks[index + 1].classList.add('active');  // +1 porque el primer enlace es "Inicio"
+        sidebarLinks[index + 1].classList.add('active');//+1 porque el primer enlace es "Inicio"
       }
     });
   }
