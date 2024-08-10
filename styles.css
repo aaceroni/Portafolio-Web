@@ -117,6 +117,9 @@ body {
   background: rgb(0 0 0 / 30%);
 }
 
+
+
+
 .menu-toggle {
   display: none;
   font-size: 24px;
@@ -129,9 +132,14 @@ body {
 }
 
 
+
+
 .section{
   width: 100%;
 }
+
+
+
 
 .download-btn {
   color: white !important;
