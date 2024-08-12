@@ -18,11 +18,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   //Función para comprobar la posición del scroll y activar el enlace correspondiente
   function onScroll() {
-    const sections = document.querySelectorAll('.section');
+    const cards = document.querySelectorAll('.card');
     let scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
 
-    sections.forEach((section, index) => {
-      if (section.offsetTop <= scrollPos && section.offsetTop + section.offsetHeight > scrollPos) {
+    cards.forEach((card, index) => {
+      if (card.offsetTop <= scrollPos && card.offsetTop + card.offsetHeight > scrollPos) {
         sidebarLinks.forEach(link => link.classList.remove('active'));
         sidebarLinks[index + 1].classList.add('active');//+1 porque el primer enlace es "Inicio"
       }

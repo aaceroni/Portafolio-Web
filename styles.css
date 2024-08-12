@@ -136,16 +136,16 @@ body {
 }
 
 .sidebar nav > a:hover {
-  background: rgb(0 0 0 / 20%);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .sidebar nav > a:active,
 .sidebar nav > a.active {
-  background: rgb(0 0 0 / 30%);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .sidebar nav > a:focus {
-  background: rgb(0 0 0 / 30%);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 
@@ -184,7 +184,7 @@ body {
   margin-right: 10px;
   padding: 16px 26px;
   cursor: pointer;
-  border: 2px solid rgb(0, 255, 170) !important;
+  border: 2px solid rgb(22, 189, 255) !important;
   border-radius: 40px;
   background-color: transparent;
   margin-bottom: 60px;
@@ -194,8 +194,8 @@ body {
 
 .perfil-btn:hover {
   border-color: rgb(0, 255, 170);
-  color: #0d0815 !important;
-  background-color: rgb(0, 255, 170);
+  color: black !important;
+  background-color: rgb(22, 189, 255);
 }
 
 
