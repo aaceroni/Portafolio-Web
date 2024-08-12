@@ -5,6 +5,7 @@ function toggleMenu() {
 
 document.addEventListener('DOMContentLoaded', function() {
   const sidebarLinks = document.querySelectorAll('.sidebar a');
+  const sidebar = document.querySelector('.sidebar');
 
   sidebarLinks.forEach(link => {
     link.addEventListener('click', function() {
@@ -13,6 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
       
       //Añade la clase 'active' al enlace clicado
       this.classList.add('active');
+
+      //Cierra la barra lateral
+      sidebar.classList.remove('open');
     });
   });
 
