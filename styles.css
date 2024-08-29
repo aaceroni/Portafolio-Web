@@ -25,7 +25,6 @@ body {
 .icon-container {
   display: flex;
   position: fixed;
-  margin-top: 330px;
 }
 
 .icon-container i {
@@ -454,6 +453,5 @@ body {
   .icon-container {
     display: flex;
     position: fixed;
-    margin-top: 0px;
   }
 }
